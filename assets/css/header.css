@@ -29,7 +29,7 @@ header{
 }
 
 .nav-link:hover{
-    color: #white !important;
+    color: white !important;
     font-weight: bold !important; 
     transition: 0.2s;
 }
