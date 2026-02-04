@@ -1,0 +1,31 @@
+header{
+    background-color: #F4E8D8;
+}
+.nav-link{
+    color: #0F5C4D !important;
+    font-weight: 400 !important; 
+    font-size: 18px !important;
+}
+.nav-link:hover{
+    color: #146B5E !important;
+    font-weight: bold !important; 
+    transition: 0.2s;
+}
+.topnav-logo{
+    width: 100px;
+    height: 100px;
+}
+.dropdown-menu{
+    background-color: #F4E8D8 !important;    
+    color: #146B5E !important;
+}
+.dropdown-item{
+    color: #146B5E !important;
+    font-size: 18px !important;
+    font-weight: 400 !important; 
+}
+.dropdown-item:hover{
+    color: #146B5E !important;
+    font-weight: bold !important; 
+    transition: 0.2s;
+}
