@@ -51,7 +51,7 @@ header{
 }
 
 .dropdown-item:hover{
-    color: white !important;
+    color: #146B5E !important;
     font-weight: bold !important; 
     transition: 0.2s;
 }

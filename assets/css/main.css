@@ -1,4 +1,4 @@
-.video{
+.video, .weekly-dishes{
     position: relative; 
 }
 .bg-video {
@@ -18,4 +18,16 @@
     font-weight: bold;
     font-style: 24px;
     background-color: rgba(0,0,0,0.5);
+}
+.weekly-h1, .video-h1, .card-text{
+    font-weight: bold;
+}
+.weekly-h1{
+    padding-top: 5%;
+}
+.weekly-dishes{
+    background-color: #f5f5dc;
+}
+.card{
+    background-color: #f5f5dc;
 }
