@@ -1,5 +1,5 @@
 header{
-    background-color: #146B5E;
+    background-color: #146B5E !important;
 }
 
 .nav-link{
@@ -62,23 +62,27 @@ header{
 }
 
 .topnav-end{
-    gap: 30px;
+    gap: 15px;
 }
 
 .phone-num{
     text-decoration: none;
     color: white !important;
-    font-weight: 400 !important; 
+    font-weight: 200 !important; 
+    font-size: 15px;
+}
+
+.phone-num svg, .whatsapp-icn, .instagram-icn{
+    text-decoration: none;
+    color: white !important;
 }
 
 .phone-num svg{
-    text-decoration: none;
-    color: white !important;
     margin-right: 5px;
 }
 
 .phone-num:hover{
     text-decoration: underline;
     transition: 0.2s;
-    font-weight: bold !important; 
+    font-weight: 500 !important; 
 }
