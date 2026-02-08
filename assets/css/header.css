@@ -1,17 +1,17 @@
 header{
-    background-color: #146B5E !important;
+    background-color: whitesmoke !important;
 }
 
-.nav-link{
+header .nav-link{
     position: relative;
-    color: white !important;
+    color: black !important;
     font-weight: 400 !important; 
     font-size: 18px !important;
     text-decoration: none;
     margin-left: 22px;
 }
 
-.nav-link::before{
+header .nav-link::before{
     content: "";
     position: absolute;
     display: block;
@@ -24,12 +24,12 @@ header{
     transition: transform 0.3s ease;
 }
 
-.nav-link:hover::before {
+header .nav-link:hover::before {
     transform: scaleX(1);
 }
 
-.nav-link:hover{
-    color: white !important;
+ header .nav-link:hover{
+    color: black !important;
     font-weight: bold !important; 
     transition: 0.2s;
 }
@@ -39,19 +39,19 @@ header{
     height: 100px;
 }
 
-.dropdown-menu{
-    background-color: #146B5E !important;    
-    color: white !important;
+header .dropdown-menu{
+    background-color: whitesmoke !important;    
+    color: black !important;
 }
 
-.dropdown-item{
-    color: white !important;
+header .dropdown-item{
+    color: black !important;
     font-size: 18px !important;
     font-weight: 400 !important; 
 }
 
-.dropdown-item:hover{
-    color: #146B5E !important;
+header .dropdown-item:hover{
+    color: black !important;
     font-weight: bold !important; 
     transition: 0.2s;
 }
@@ -67,14 +67,14 @@ header{
 
 .phone-num{
     text-decoration: none;
-    color: white !important;
-    font-weight: 200 !important; 
+    color: black !important;
+    font-weight: 400 !important; 
     font-size: 15px;
 }
 
 .phone-num svg, .whatsapp-icn, .instagram-icn{
     text-decoration: none;
-    color: white !important;
+    color: black !important;
 }
 
 .phone-num svg{
