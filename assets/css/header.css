@@ -1,5 +1,6 @@
 header{
-    background-color: whitesmoke !important;
+    background-image: url(../images/background2.png);
+    background-size: 300px;
 }
 
 header .nav-link{

@@ -115,6 +115,25 @@
     background-color: black !important;
     color: #faedda !important;
 }
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25); /* степень затемнения */
+    z-index: 1;
+}
+
+.carousel-item img {
+    display: block;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
 .halls .card{
     background-color: #faedda !important;;
 }
@@ -180,4 +199,21 @@ footer{
 }
 footer .nav-link{
     color: black !important;
+}
+footer .nav-link:hover{
+    color: red !important;
+}
+.ornament-divider{
+  height: 90px;
+  width: 100%;
+  background-image: url("../images/ornament-divider.png"); 
+  background-repeat: repeat-x;
+  background-size: 300px 200px;
+  background-position: 0 50%;
+  animation: ornamentMove 25s linear infinite;
+}
+
+@keyframes ornamentMove{
+  from { background-position: 0 50%; }
+  to   { background-position: 240px 50%; }
 }
