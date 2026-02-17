@@ -1,24 +1,64 @@
 .video, .weekly-dishes{
     position: relative; 
 }
+
+.site-bg-video{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.site-bg-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+header, main, footer, section{
+    position: relative;
+    z-index: 1;
+}
+
+.menu, .halls, footer{
+    background: transparent !important;
+}
+
+.video{
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+
 .bg-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -100;
-    object-fit: cover;
-    height: 500px; 
-}
-.video-dark {
+    height: 100%;
     object-fit: cover; 
-    width: 100%;
-    height: 500px;      
-    background-color: rgba(0,0,0,0.5);
+    z-index: -2;
 }
 
-.video-text{
+.video-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     color: white;
+    padding: 0 15px;
+}
+
+.video-text {
+    max-width: 800px;
 }
 
 .video-h1{
@@ -57,11 +97,12 @@
 }
 
 .menu .card{
-    border: 1px solid black !important;
-    background-color: #faedda !important;
+    border: 1px solid white !important;
+    background-color: transparent !important;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    color: white;
 }
 
 .menu .card:hover{
@@ -95,25 +136,25 @@
 .menu .tab-pane.active .col-12:nth-child(6) .card { transition-delay: 0.30s; }
 
 .menu .nav-link{
-    border: 1px solid black !important;
-    background-color: #faedda !important;
-    color: black !important;
+    border: 1px solid white !important;
+    background-color: transparent !important;
+    color: white !important;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 .menu .nav-link:hover{
-    border: 1px solid black !important;
-    background-color: black  !important;
-    color: #faedda !important;
+    border: 1px solid transparent !important;
+    background-color: white  !important;
+    color: black!important;
     transition: 0.5s;
 }
 
 .menu .nav-link.active{
-    border: 1px solid black !important;
-    background-color: black !important;
-    color: #faedda !important;
+    border: 1px solid transparent !important;
+    background-color: white  !important;
+    color: black!important;
 }
 .carousel-item {
     position: relative;
@@ -135,11 +176,15 @@
     z-index: 2;
 }
 .halls .card{
-    background-color: #faedda !important;;
+    border: 1px solid white !important;
+    background-color: transparent !important;;
+    color: white;
 }
 .card:hover{
-    cursor: pointer;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none !important;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 .card:hover .listbtn{
     cursor: pointer;
@@ -150,17 +195,17 @@
     visibility: hidden;
     height: 63px;
     width: 220px;
-    background-color: #faedda !important;;
-    color: black;
-    border: 1px solid black !important;
+    background-color: transparent !important;;
+    color: white;
+    border: 1px solid white !important;
     border-radius: 20px;
 }
 .listbtn:hover{
     height: 63px;
     width: 220px;
-    color: #faedda;
-    border: 1px solid black !important;
-    background-color: black !important;
+    color: black;
+    border: 1px solid transparent !important;
+    background-color: white !important;
     border-radius: 20px;
 }
 .halls{
@@ -173,47 +218,65 @@
 }
 .contacts-p{
     font-size: 20px;
+    color: white !important;
 }
 .socmedia{
     width: 50px;
     height: 50px;
-    background-color: #ddc78b;
-    border-radius: 10px;
-}
-.socmedia{
-    width: 50px;
-    height: 50px;
-    background-color: #ddc78b;
+    background-color: transparent;
     border-radius: 10px;
     color: white;
 }
 .socmedia:hover{
-    width: 48px;
-    height: 48px;
-    background-color: #ddc78b;
+    background-color: white;
     border-radius: 10px;
-    color: white;
+    color: black;
 }
 footer{
     background-color: white;
 }
 footer .nav-link{
-    color: black !important;
+    color: white !important;
 }
 footer .nav-link:hover{
-    color: red !important;
+    color: whitesmoke !important;
 }
-.ornament-divider{
-  height: 90px;
-  width: 100%;
-  background-image: url("../images/ornament-divider.png"); 
-  background-repeat: repeat-x;
-  background-size: 300px 200px;
-  background-position: 0 50%;
-  animation: ornamentMove 25s linear infinite;
+footer p{
+    color: white !important;
+}
+.ornament-divider {
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
-@keyframes ornamentMove{
-  from { background-position: 0 50%; }
-  to   { background-position: 240px 50%; }
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: textMove 15s linear infinite;
+}
+
+.marquee h1 {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+
+@keyframes textMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+h1{
+    color: white !important;
 }

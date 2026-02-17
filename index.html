@@ -12,236 +12,276 @@
 </head>
 
 <body>
+<video class="site-bg-video" autoplay muted loop playsinline>
+    <source src="assets/video/background-video2.mp4" type="video/mp4">
+</video>
+<div class="site-bg-overlay"></div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
     <!-- header -->
-    <header>
-        <!-- wrapper -->
-        <div class="topnav d-flex justify-content-around align-items-center">
-            <a href=""><img class="topnav-logo img-fluid" src="assets/images/logo-placeholder.png" alt=""></a>  
-            <div class="topnav-end d-flex">
-                <a href="" class="topnav-lan-change"><img class="topnav-lan-icon img-fluid" src="assets/images/enlan.png" alt=""></a>
-                <a class="phone-num" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                </svg><span class="">+996704200420</span></a> 
-            </div>           
-        </div>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
-                <span class="navbar-toggler-icon"></span>
+    <header class="header-blur">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid align-items-center">
+
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo-placeholder.png"
+                        class="topnav-logo img-fluid"
+                        alt="Логотип">
+                </a>
+
+                <!-- Бургер -->
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Навигационная панель -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <hr>
-                <ul class="navbar-nav col d-flex justify-content-center align-items-center">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Меню</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Информация</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Залы</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Забронировать</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Контакты</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Меню</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Информация</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Залы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Забронировать</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 navbar-extra">
+                        <a href="#">
+                            <img src="assets/images/enlan.png"
+                                class="topnav-lan-icon"
+                                alt="Язык">
+                        </a>
+
+                        <a href="tel:+996704200420" class="phone-num">
+                            <span>+996 704 200 420</span>
+                        </a>
+                    </div>
                 </div>
-            </div>    
-        </nav>   
+
+            </div>
+        </nav>
     </header>
     <!-- header -->
     <!-- main -->
     <main>
+        <!-- video -->
         <section class="video">
-            <div class="container-fluid p-0">
-                <video autoplay muted loop class="bg-video">
-                    <source src="assets/video/placeholder-cooking.mp4" type="video/mp4">
-                </video>
-                <div class="video-dark">
-                    <div class="row g-0">
-                        <div class="col">
-                            <div class="video-text text-center">
-                                <h1 class="video-h1 fs-md-2 fs-lg-1">Чайхана "Казына" - поистине уникальное место</h1>
-                                <p class="mt-5 fs-md-2 fs-lg-1">"Казына" - это современный интерьер в сочетании дерева и зеркал, он располагает к безмятежному и уютному времяпрепровождению; вкусные блюда не только из барашка, но и из свежей телятины или охлажденной рыбы; внимательный сервис отличается особенным трепетом и уважением к каждому гостю</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="video-dark d-flex align-items-center justify-content-center text-center">
+                <div class="video-text">
+                    <h1 class="video-h1">Чайхана "Казына" - поистине уникальное место</h1>
+                    <p class="mt-4">
+                        "Казына" - это современный интерьер...
+                    </p>
                 </div>
             </div>
         </section>
+        <!-- menu -->
         <section class="menu">
-            <div class="container">
-                <h1 class="menu-h1 text-center">Меню</h1>
-                 <!-- Категории -->
-                <ul class="nav nav-pills justify-content-center gap-3 flex-wrap mt-5" id="menuTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
+        <div class="container">
+            <h1 class="menu-h1 text-center">Меню</h1>
+
+            <div class="row mt-5 g-4">
+            <!-- sidebar -->
+            <aside class="col-12 col-lg-3">
+                <div class="menu-sidebar p-3">
+                <div class="nav flex-column nav-pills gap-2" id="menuTabs" role="tablist" aria-orientation="vertical">
+
                     <button class="nav-link active" id="zakuski-tab"
-                            data-bs-toggle="tab" data-bs-target="#zakuski"
-                            type="button" role="tab" aria-controls="zakuski" aria-selected="true">
-                        𐰌 Закуски 𐰌
+                    data-bs-toggle="pill" data-bs-target="#zakuski"
+                    type="button" role="tab" aria-controls="zakuski" aria-selected="true">
+                    𐰌 Закуски 𐰌
                     </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
+
                     <button class="nav-link" id="salati-tab"
-                            data-bs-toggle="tab" data-bs-target="#salati"
-                            type="button" role="tab" aria-controls="salati" aria-selected="false">
-                       𐰬 Салаты 𐰬
+                    data-bs-toggle="pill" data-bs-target="#salati"
+                    type="button" role="tab" aria-controls="salati" aria-selected="false">
+                    𐰬 Салаты 𐰬
                     </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
+
                     <button class="nav-link" id="supi-tab"
-                            data-bs-toggle="tab" data-bs-target="#supi"
-                            type="button" role="tab" aria-controls="supi" aria-selected="false">
-                       𐱃 Супы 𐱃
+                    data-bs-toggle="pill" data-bs-target="#supi"
+                    type="button" role="tab" aria-controls="supi" aria-selected="false">
+                    𐱃 Супы 𐱃
                     </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
+
                     <button class="nav-link" id="meat-tab"
-                            data-bs-toggle="tab" data-bs-target="#meat"
-                            type="button" role="tab" aria-controls="meat" aria-selected="false">
-                       𐱂 Мясо, Рыба, Птица 𐱂
+                    data-bs-toggle="pill" data-bs-target="#meat"
+                    type="button" role="tab" aria-controls="meat" aria-selected="false">
+                    𐱂 Мясо, Рыба, Птица 𐱂
                     </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
+
                     <button class="nav-link" id="drinks-tab"
-                            data-bs-toggle="tab" data-bs-target="#drinks"
-                            type="button" role="tab" aria-controls="drinks" aria-selected="false">
-                       𐰫 Напитки 𐰪
+                    data-bs-toggle="pill" data-bs-target="#drinks"
+                    type="button" role="tab" aria-controls="drinks" aria-selected="false">
+                    𐰫 Напитки 𐰪
                     </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="drinks-tab"
-                            data-bs-toggle="tab" data-bs-target="#drinks"
-                            type="button" role="tab" aria-controls="drinks" aria-selected="false">
-                       𐰥 Десерты 𐰥
+
+                    <button class="nav-link" id="desserts-tab"
+                    data-bs-toggle="pill" data-bs-target="#desserts"
+                    type="button" role="tab" aria-controls="desserts" aria-selected="false">
+                    𐰥 Десерты 𐰥
                     </button>
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="drinks-tab"
-                            data-bs-toggle="tab" data-bs-target="#drinks"
-                            type="button" role="tab" aria-controls="drinks" aria-selected="false">
-                       𐰳 Гарниры 𐰳
+
+                    <button class="nav-link" id="garnish-tab"
+                    data-bs-toggle="pill" data-bs-target="#garnish"
+                    type="button" role="tab" aria-controls="garnish" aria-selected="false">
+                    𐰳 Гарниры 𐰳
                     </button>
-                    <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="drinks-tab"
-                            data-bs-toggle="tab" data-bs-target="#drinks"
-                            type="button" role="tab" aria-controls="drinks" aria-selected="false">
-                       𐱈 Хлеб 𐱈
+
+                    <button class="nav-link" id="bread-tab"
+                    data-bs-toggle="pill" data-bs-target="#bread"
+                    type="button" role="tab" aria-controls="bread" aria-selected="false">
+                    𐱈 Хлеб 𐱈
                     </button>
-                </ul>
-                <!-- Category content -->
-                <div class="tab-content mt-3" id="menuTabsContent">
-                    <div class="tab-pane fade show active" id="zakuski" role="tabpanel" aria-labelledby="zakuski-tab" tabindex="0">
-                        <div class="row g-4 mt-2">
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                           <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                           <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                           <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                           <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
+                </div>
+                </div>
+            </aside>
+            <!-- Content categoriy -->
+            <div class="col-12 col-lg-9">
+                <div class="tab-content" id="menuTabsContent">
+
+                <!-- Закуски -->
+                <div class="tab-pane fade show active" id="zakuski" role="tabpanel" aria-labelledby="zakuski-tab" tabindex="0">
+                    <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card menu-card h-100">
+                        <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Условное блюдо</h5>
+                            <p class="card-text">500 сом</p>
                         </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card menu-card h-100">
+                        <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Условное блюдо</h5>
+                            <p class="card-text">500 сом</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card menu-card h-100">
+                        <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Условное блюдо</h5>
+                            <p class="card-text">500 сом</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card menu-card h-100">
+                        <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Условное блюдо</h5>
+                            <p class="card-text">500 сом</p>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- col - карточка -->
                     </div>
                 </div>
-                <div class="tab-content mt-3" id="menuTabsContent">
-                    <div class="tab-pane fade" id="salati" role="tabpanel" aria-labelledby="salati-tab" tabindex="0">
-                        <div class="row g-4 mt-2">
-                           <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                           <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                           <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="card menu-card h-100">
-                                    <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Условное блюдо</h5>
-                                    <p class="card-text">
-                                    500 сом
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
+
+                <!-- Салаты -->
+                <div class="tab-pane fade" id="salati" role="tabpanel" aria-labelledby="salati-tab" tabindex="0">
+                    <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card menu-card h-100">
+                        <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Условное блюдо</h5>
+                            <p class="card-text">500 сом</p>
+                        </div>
                         </div>
                     </div>
+                    </div>
+                </div>
+
+                <!-- Супы -->
+                <div class="tab-pane fade" id="supi" role="tabpanel" aria-labelledby="supi-tab" tabindex="0">
+                    <div class="row g-4">
+                    <!-- карточки супов -->
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card menu-card h-100">
+                        <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Условное блюдо</h5>
+                            <p class="card-text">500 сом</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card menu-card h-100">
+                        <img src="assets/images/lagman-placeholder.jpg" class="card-img-top" alt="Блюдо">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Условное блюдо</h5>
+                            <p class="card-text">500 сом</p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Мясо -->
+                <div class="tab-pane fade" id="meat" role="tabpanel" aria-labelledby="meat-tab" tabindex="0">
+                    <div class="row g-4">
+                    <!-- карточки мяса -->
+                    </div>
+                </div>
+
+                <!-- Напитки -->
+                <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab" tabindex="0">
+                    <div class="row g-4">
+                    <!-- карточки напитков -->
+                    </div>
+                </div>
+
+                <!-- Десерты -->
+                <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab" tabindex="0">
+                    <div class="row g-4">
+                    <!-- карточки десертов -->
+                    </div>
+                </div>
+
+                <!-- Гарниры -->
+                <div class="tab-pane fade" id="garnish" role="tabpanel" aria-labelledby="garnish-tab" tabindex="0">
+                    <div class="row g-4">
+                    <!-- карточки гарниров -->
+                    </div>
+                </div>
+
+                <!-- Хлеб -->
+                <div class="tab-pane fade" id="bread" role="tabpanel" aria-labelledby="bread-tab" tabindex="0">
+                    <div class="row g-4">
+                    <!-- карточки хлеба -->
+                    </div>
+                </div>
                 </div>
             </div>
+            </div>
+        </div>
         </section>
-        <div class="ornament-divider" aria-hidden="true"></div>
+        <!-- menu -->
+        <div class="ornament-divider" aria-hidden="true">
+            <div class="marquee">
+                <h1>
+                    САМАЯ ЛУЧШАЯ ЭТНО-ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЭТНО-ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЭТНО-ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЭТНО-ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                </h1>
+            </div>
+        </div>
         <section class="information">  
             <div class="inform-text container text-center">
                 <h1 class="inform-h1 fs-md-2 fs-lg-1">Информация</h1>
@@ -288,7 +328,19 @@
                     </div>
                 </div>
         </section>
-        <div class="ornament-divider" aria-hidden="true"></div>
+        <div class="ornament-divider" aria-hidden="true">
+            <div class="marquee">
+                <h1>
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                </h1>
+            </div>
+        </div>
         <section class="halls">
             <div class="container">
                 <div class="halls-h1 text-center">
@@ -313,7 +365,7 @@
                         <img src="https://lh3.googleusercontent.com/IuqHzmJwXHtahIKr3hA70wLlf5pKkpMfJlc98B4mJzG0GVRZT_44l17xHDgWKd6-LQdy4saMJrtmiPcAAP0Fy6OuyPJLe_HJk-lFnA=w710-h472-n-l95-rw" class="card-img-top" alt="...">
                     <div class="card-body">
                         <div class="card-h4 text-center">
-                            <h4>VIP зал</h4>
+                            <h4>VIP-кабинка</h4>
                         </div>
                         <div class="card-btn d-flex justify-content-center">
                             <button class="listbtn" type="submit">ЗАБРОНИРОВАТЬ</button>
@@ -323,7 +375,19 @@
                 </div>
             </div>
         </section>
-        <div class="ornament-divider" aria-hidden="true"></div>
+        <div class="ornament-divider" aria-hidden="true">
+            <div class="marquee">
+                <h1>
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                </h1>
+            </div>
+        </div>
         <section class="contacts">
             <div class="container">
                 <div class="row">
@@ -365,7 +429,19 @@
                 </div>
             </div>
         </section>
-        <div class="ornament-divider" aria-hidden="true"></div>
+        <div class="ornament-divider" aria-hidden="true">
+            <div class="marquee">
+                <h1>
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                    &nbsp;&nbsp;&nbsp;
+                    САМАЯ ЛУЧШАЯ ЧАЙХАНА МАНАСА || КАЗЫНА ||
+                </h1>
+            </div>
+        </div>
     </main>
     <!-- main -->
     <!-- footer -->
@@ -391,8 +467,8 @@
                         </li>
                     </ul>
 
-                    <p class="text-center text-body-secondary">
-                        © 2025 Чайхана "Казына"
+                    <p class="text-center">
+                        © 2026 Чайхана "Казына"
                     </p>
                 </div>
             </div>

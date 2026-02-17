@@ -3,13 +3,27 @@ header{
     background-size: 300px;
 }
 
+.header-blur {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    background: rgba(82, 82, 82, 0.65); /* бежевый с прозрачностью */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+
 header .nav-link{
     position: relative;
-    color: black !important;
+    color: white !important;
     font-weight: 400 !important; 
     font-size: 18px !important;
     text-decoration: none;
-    margin-left: 22px;
+    margin-left: 40px;
 }
 
 header .nav-link::before{
@@ -30,31 +44,13 @@ header .nav-link:hover::before {
 }
 
  header .nav-link:hover{
-    color: black !important;
+    color: white !important;
     font-weight: bold !important; 
     transition: 0.2s;
 }
 
 .topnav-logo{
-    width: 100px;
-    height: 100px;
-}
-
-header .dropdown-menu{
-    background-color: whitesmoke !important;    
-    color: black !important;
-}
-
-header .dropdown-item{
-    color: black !important;
-    font-size: 18px !important;
-    font-weight: 400 !important; 
-}
-
-header .dropdown-item:hover{
-    color: black !important;
-    font-weight: bold !important; 
-    transition: 0.2s;
+    width: 90px;
 }
 
 .topnav-lan-icon{
@@ -68,18 +64,9 @@ header .dropdown-item:hover{
 
 .phone-num{
     text-decoration: none;
-    color: black !important;
+    color: white !important;
     font-weight: 400 !important; 
     font-size: 15px;
-}
-
-.phone-num svg, .whatsapp-icn, .instagram-icn{
-    text-decoration: none;
-    color: black !important;
-}
-
-.phone-num svg{
-    margin-right: 5px;
 }
 
 .phone-num:hover{
