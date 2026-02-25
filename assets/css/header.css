@@ -11,7 +11,7 @@ header{
 }
 
 .navbar {
-    background: rgba(82, 82, 82, 0.65); /* бежевый с прозрачностью */
+    background: rgba(40, 113, 62, 0.65); 
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 }
